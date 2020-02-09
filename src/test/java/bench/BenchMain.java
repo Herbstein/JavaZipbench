@@ -18,7 +18,7 @@ public class BenchMain {
         System.out.println("Zip: " + zipCount + "\tDir: " + dirCount);
     }
 
-    //@Benchmark
+    @Benchmark
     public static long countZip() throws Exception {
         var zipFile = new ZipFile("node_modules.zip");
 
@@ -38,7 +38,7 @@ public class BenchMain {
         return total;
     }
 
-    @Benchmark
+    // @Benchmark
     public static long countDir() throws Exception {
         var visitor = new CountingVisitor();
 
