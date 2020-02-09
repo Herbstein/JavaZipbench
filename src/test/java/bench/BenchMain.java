@@ -38,7 +38,7 @@ public class BenchMain {
         return total;
     }
 
-    // @Benchmark
+    @Benchmark
     public static long countDir() throws Exception {
         var visitor = new CountingVisitor();
 
